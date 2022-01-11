@@ -1,23 +1,26 @@
-.main{
-    margin-top: auto;
-    margin-left: 20%;
-    margin-right: 20%;
+/* .main{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    border-width: 150%;
-}
+    
+} */
 
 .main1{
     display: flex;
     justify-content: center;
 }
+ul{
+    list-style-type: none;
+}
 
-.h1{
+h1{
     text-align: center;
     color: #007AF3;
 }
 
 .btn{
-    margin: 60px 30px 30px 30px;
+    margin-top: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .scissorsBtn{
     text-align: center;
@@ -47,6 +50,7 @@
     cursor: pointer;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
 .scissorsBtn:hover,.paperBtn:hover , .rockBtn:hover{
     background-color: white;
     color:#007AF3;
@@ -62,7 +66,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 
 .game{
@@ -129,4 +132,103 @@
     height: 300px;
     margin: 3px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 950px) {
+
+    h1, .h1{
+        font-size: 26px;
+        line-height: 20px;
+    } 
+
+    ul{
+        list-style-type: none;
+    }
+
+    .btns {
+        display: flex;
+        padding-left: 0;
+        margin: 10px;
+    }
+    .btns li{
+        margin: 0 2px;
+    }
+
+    .main1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .scissorsBtn{
+        font-weight: 500;
+        font-size: 1em;
+        border-radius: 5em;
+        padding: 1.5em 1em;
+        }
+    .paperBtn , .rockBtn{
+        font-weight: 500;
+        font-size: 1em;
+        border-radius: 2em;
+        padding: 1.5em 1.8em;
+    }
+    
+    .game{
+        font-size: 1.3em;
+        margin: -10px 30px 0px 30px;
+        padding-top: 20px;
+    }
+    
+    .game img{
+        width: 100px;
+        padding: 0px 15px;
+    }
+
+    .gameHuman, .gameComputer{
+        height: 200px;
+        margin: 3px;
+    }
+
+    .score{
+        margin: 10px 30px 0px -6px;
+        font-weight: bold;
+    }
+
+    .computerScore{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    
+.btn{
+    margin: 0px 30px;
+}
+
+.main{
+    margin: auto 0%;
+    border-width: 150%;
+}
+
+.newgameBtn{
+    margin: 1em auto;
+    padding: .8em 1em;
+}
+
+.lastP{
+    font-size: 1.2em;
+    margin-left: 0px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.last{
+    margin: -10px 0;
+}
+
 }
